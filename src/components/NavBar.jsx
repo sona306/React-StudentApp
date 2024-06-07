@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
     return (
@@ -6,23 +7,23 @@ const NavBar = () => {
 
             <nav className="navbar navbar-expand-lg bg-primary">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">Navbar</a>
+                    <Link className="navbar-brand" to="#">Navbar</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">AddStudent</a>
+                                <Link className="nav-link active" aria-current="page" to="/">AddStudent</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/search">Search</a>
+                                <Link className="nav-link" to="/search">Search</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/delete">Delete</a>
+                                <Link className="nav-link" to="/delete">Delete</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/view">viewAll</a>
+                                <Link className="nav-link" to="/view">viewAll</Link>
                             </li>
                         </ul>
                         <form className="d-flex" role="search">
