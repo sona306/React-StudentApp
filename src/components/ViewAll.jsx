@@ -4,9 +4,28 @@ import NavBar from './NavBar'
 const ViewAll = () => {
     const [data,changeData]=useState(
         [
-            {"name":"sona","admno":101,"rollno":10},
-            {"name":"shilpa","admno":1078,"rollno":18},
-            {"name":"kavya","admno":1111,"rollno":12}
+               {
+                "name":'shilpa',
+                "rollNo":'1',
+                "admNo":'11425',
+                "college":'fisat',
+                "parentname":'BinduRaj',
+                "dob":'12',
+                "email":'silpa@gmail.com',
+                "password":'abc',
+                "confirm":'abc'
+                },
+                {
+                "name":'sona',
+                "rollNo":'2',
+                "admNo":'1976',
+                "college":'fisat',
+                "parentname":'Sabu',
+                "dob":'30',
+                "email":'sona@gmail.com',
+                "password":'efg',
+                "confirm":'efg'
+                    }
         ]
     )
     return (
@@ -24,8 +43,14 @@ const ViewAll = () => {
                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB_UoXwaGYHlqsTfmvIrH2bSyE2NpcA62_hw&s" height="250" className="card-img-top" alt="..." />
                                             <div className="card-body">
                                                 <h5 className="card-title">{value.name}</h5>
-                                                <p className="card-text">{value.rollno}</p>
-                                                <p className="card-text">{value.admno}</p>
+                                                <p className="card-text">{value.rollNo}</p>
+                                                <p className="card-text">{value.admNo}</p>
+                                                <p className="card-text">{value.college}</p>
+                                                <p className="card-text">{value.parentname}</p>
+                                                <p className="card-text">{value.dob}</p>
+                                                <p className="card-text">{value.email}</p>
+                                                <p className="card-text">{value.password}</p>
+                                                <p className="card-text">{value.confirm}</p>
                                                 <a href="#" className="btn btn-primary">Go somewhere</a>
                                             </div>
                                         </div>
